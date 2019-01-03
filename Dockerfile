@@ -1,5 +1,5 @@
 FROM ubuntu:xenial
-MAINTAINER Ingo Müller <ingo.mueller@inf.ethz.ch>
+MAINTAINER Robert Schilling <robe.schilling@gmail.com>
 
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y \
@@ -28,4 +28,5 @@ RUN apt-get update && \
         pdftk \
         latexmk \
         biber \
+        libreoffice \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
