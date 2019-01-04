@@ -29,4 +29,5 @@ RUN apt-get update && \
         latexmk \
         biber \
         libreoffice \
+        wget \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
