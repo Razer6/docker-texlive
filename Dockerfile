@@ -30,4 +30,5 @@ RUN apt-get update && \
         biber \
         libreoffice \
         wget \
+        git \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
